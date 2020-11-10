@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1> <%= @article.title %> </h1>
+
+      <%= render "form", article: @article %>
+
+      <hr>
+      <br>
+      <br>
+
+      <button type="button" class="btn btn-danger"><%= link_to "Revenir à l'article", article_path %></button>
+    </div>
+  </div>
+</div>

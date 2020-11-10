@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1> <%= @article.title %> </h1>
+      <hr>
+      <button type="button" class="btn btn-warning"><%= link_to "Editer cet article", edit_article_path %></button>
+      <hr>
+      <p> <%= @article.content %> </p>
+
+      <button type="button" class="btn btn-warning"><%= link_to "Revenir à la liste", articles_path %></button>
+    </div>
+  </div>
+</div>
